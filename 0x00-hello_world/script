@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "what is the file name"
+read filename
+
+echo "write the contenet"
+read content
+
+echo "#!/bin/bash
+${content}" > ${filename}
+
+chmod +x ${filename}
