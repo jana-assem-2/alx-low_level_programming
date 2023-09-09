@@ -19,6 +19,8 @@ int main(void)
 			putchar(' ');
 			x++;
 		}
+		else
+			break;
 	}
 	putchar('\n');
 	return (0);
