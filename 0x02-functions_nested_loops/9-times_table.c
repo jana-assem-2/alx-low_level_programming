@@ -13,9 +13,9 @@ void print_times_table(int n)
 		for (j = 0; j <= 9; j++)
 		{
 			_putchar((i * j) + '0');
-			_putchar(44)
-			_putchar(32)
+			_putchar(44);
+			_putchar(32);
 		}
-		_putchar('\n')	
+		_putchar('\n');	
 	}
 }
