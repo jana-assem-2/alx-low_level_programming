@@ -1,33 +1,22 @@
 #include "main.h"
 
 /**
-* puts_half - printing half a string
-* @str: that's the string
-* Return: void
+ * *_strcpy -startpoint
+ * this is a c program that do a function that copies the string pointed to by
+ * src, including the terminating null byte (\0),
+ * to the buffer pointed to by dest.
+ * Return: the pointer to dest
+ * @dest: this arr that src cp to it
+ * @src: this arr that cp from it to dest
 */
 
-void puts_half(char *str)
+char *_strcpy(char *dest, char *src)
 {
-	int i, half;
-	int len = 0;
+	int i = -1;
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		len++;
-	}
-	if (len % 2 == 0)
-	{
-		for (half = len / 2; str[half] != '\0'; half++)
-		{
-			_putchar(str[half] + 0);
-		}
-	}
-	else
-	{
-		for (half = (len / 2) + 1; str[half] != '\0'; half++)
-		{
-			_putchar(str[half] + 0);
-		}
-	}
-	_putchar('\n');
+	do {
+		i++;
+		dest[i] = src[i];
+	} while (src[i] != '\0');
+	return (dest);
 }
