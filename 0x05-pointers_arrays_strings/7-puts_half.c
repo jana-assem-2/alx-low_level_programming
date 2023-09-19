@@ -1,6 +1,6 @@
-#include "main.h" 
+#include "main.h"
 
-/** 
+/**
 * puts_half - printing half a string
 * @str: that's the string
 * Return: void
