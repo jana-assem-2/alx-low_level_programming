@@ -7,16 +7,16 @@
  * @a: an array of integers
  * @n: the number of elements to swap
 */
-
 void reverse_array(int *a, int n)
 {
-	int i;
+	int aux[n];
 
-	for (i = (n - 1); i >= 0; i--)
+	for (int i = 0; i < n; i++)
 	{
-		if (i != 0)
-			printf("%d, ", a[i]);
-		else
-			printf("%d", a[i]);
+		aux[n - 1 - i] = a[i];
+	}
+	for (int i = 0; i < n; i++)
+	{
+		a[i] = aux[i];
 	}
 }
