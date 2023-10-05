@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (0);
 	}
-	for (k = 0; k < (i + j); k++)
+	for (k = 0; k <= (i + j); k++)
 	{
 		if (k < i)
 		{
@@ -37,5 +37,6 @@ char *str_concat(char *s1, char *s2)
 			ptr[k] = s2[k - i];
 		}
 	}
+	ptr[k] = '\0';
 	return (ptr);
 }
