@@ -22,6 +22,10 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; *s2 != '\0'; j++)
 		;
 	ptr = (char *)malloc((i + j) * 8 + 1);
+	if (ptr == 0)
+	{
+		return (0);
+	}
 	for (k = 0; k < (i + j); k++)
 	{
 		if (k < i)
