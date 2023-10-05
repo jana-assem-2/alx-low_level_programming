@@ -18,6 +18,10 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
+	if (i == 0 || ptr == 0)
+	{
+		return (0);
+	}
 	for (j = 0; *str != '\0'; j++)
 	{
 		ptr[j] = str[j]
